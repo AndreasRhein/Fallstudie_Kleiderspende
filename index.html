@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 footer{
-    background-color: #111;
+    background-color: rgb(197, 194, 32);
 }
 
 .footerContainer{
@@ -59,6 +59,7 @@ footer{
 .footerNav ul{
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
 .footerNav ul li a{
@@ -80,9 +81,32 @@ footer{
     text-align: center;
 }
 
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
 .kleider-image{
     height: 200px;
     object-fit: contain;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
 
 .karussel-image{
@@ -119,13 +143,13 @@ bottom:0;
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Contact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#">Our Team</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -162,7 +186,7 @@ bottom:0;
         <img class="karussel-image" src="img/Karussell_03.PNG" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Weltweit !</h5>
-          <p>Wir beliefern global</p>
+          <p>Wir unterstützen Bedürftige aus der ganzen Welt</p>
         </div>
       </div>
     </div>
@@ -265,11 +289,11 @@ bottom:0;
          </div>   
          <div class="footerNav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact us</a></li>
-                <li><a href="">Or Team</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Impressum</a></li>
+                <li><a href="">Datenschutz</a></li>
             </ul>
          </div>
         </div> 
