@@ -3,9 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Kleiderspende</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
+        
+    <style>
+    .kleider-image{
+            height: 200px;
+            object-fit: contain;
+    }
+    .karussel-image{
+            height: 50vw;            
+            object-fit: cover;        
+    }
+
+    </style>
+
+</head>
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+<body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>         
+    <header>
+    <main>    
+        
+            <!-- Navbar content -->
+            
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(163, 157, 4);">
+            
+            <div class="container-fluid">
+              <a class="navbar-brand mb-0 h1" href="#">
+                
+                <img src="img/Logo_01.jpg"  
+                width="100" height="30" />
+                
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="karussel-image" src="img/Global_earth.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="karussel-image" src="img/Global_together.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="karussel-image" src="img/Global_circle.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!--  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="karussel-image" src="img/Global_together.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="karussel-image" src="img/Global_earth.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="karussel-image" src="img/Global_earth.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  -->
+        
+        <br>
+        <br>            
+        <div class="container">      
+<!-- Karte 1 -->
+        <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col"> 
+            <div class="card shadow-sm">
+            <img class="kleider-image" src="img/Global_abstract.png">
+            <div class="card-body">
+                <div class="text-black-50">
+                    Wähle ein Land !  
+            </div> 
+            Entscheide selbst wohin Deine Spende gesendet wird.
+            </div> 
+            </div>
+        </div>
+    <!-- Karte 2 -->
+        <div class="col">
+        <div class="card">
+            <img class="kleider-image" src="img/clothes.png">
+            <div class="card-body">
+                <div class="text-black-50">
+                    Wähle die Klamotten  
+            </div>
+            Enscheide über die Kleider-Art Deiner Spende
+            </div>
+            </div>
+        </div>
+    <!-- Karte 3 -->
+        <div class="col"> 
+        <div class="card">
+            <img class="kleider-image" src="img/Nachhaltigkeit_brain.jpg">
+            <div class="card-body">
+                <div class="text-black-50">
+                    Trage zur Nachhaltigkeit bei !  
+            </div>
+            Mit Deiner Spende <br> agierst Du nachhaltig.
+            </div>
+            </div>
+        </div>        
+    <!-- Karte 4 -->
+        <div class="col"> 
+        <div class="card">
+            <img class="kleider-image" src="img/superhero.png">
+            <div class="card-body">
+                <div class="text-black-50">
+                    Sei ein Kleider-Held !  
+            </div>
+            Mit Deiner Spende wirst auch Du zum Kleider-Held.
+            </div>
+           </div>
+          </div>    
+         </div> 
+         <br>
+        <br>
+        <br>
+        <h1>Jetzt Spenden:</h1>
+        <br>
+        <br>
+        <div class="card w-75 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Abholung</h5>
+          <p class="card-text">Veranlassen Sie ganz bequem eine Abohlung für Ihre Spende.</p>
+          <a href="#" class="btn btn-primary">Jetzt geht's los</a>
+        </div>
+      </div>
+      
+      <div class="card w-50">
+        <div class="card-body">
+          <h5 class="card-title">Übergabe an der Geschäftsstelle</h5>
+          <p class="card-text">Gerne können Sie für Ihre Spende auch persönlich vorbeikommen</p>
+          <a href="#" class="btn btn-primary">Jetzt geht's los</a>
+        </div>
+      </div>
+    </main>  
+    </header>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Datenschutz</a></li>
+                <li><a href="imprint.html">Impressum</a></li>
+            </ul>
+        </nav> 
+    </footer>
 </body>
 </html>
